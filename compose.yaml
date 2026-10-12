@@ -18,7 +18,7 @@ services:
       - SMTP_SECURITY=${SMTP_SECURITY}
       - SMTP_PORT=${SMTP_PORT}
       - IP_HEADER=X-Forwarded-For
-      - IP_HEADER_TRUSTED_PROXIES=172.16.5.0/24
+      - IP_HEADER_TRUSTED_PROXIES=172.16.5.0/24,10.0.11.10/32
     volumes:
       - ${DOCKER_VOLUMES}/Vaultwarden:/data/
       - /etc/localtime:/etc/localtime:ro
