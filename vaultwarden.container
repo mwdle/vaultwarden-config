@@ -9,8 +9,7 @@ Secret=lab_smtp_password,target=smtp_password,uid=1000,gid=1000,mode=0400
 
 Environment=DOMAIN=https://vault.mwdle.com
 Environment=IP_HEADER=X-Forwarded-For
-# TODO
-# Environment=IP_HEADER_TRUSTED_PROXIES=
+Environment=IP_HEADER_TRUSTED_PROXIES=10.89.0.0/16
 Environment=ROCKET_PORT=8080
 Environment=SIGNUPS_ALLOWED=false
 Environment=SMTP_FROM_FILE=/run/secrets/smtp_username
