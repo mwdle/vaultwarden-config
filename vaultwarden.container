@@ -4,8 +4,8 @@ ContainerName=vaultwarden
 
 Network=vaultwarden.network
 
-Secret=lab_smtp_username,target=smtp_username,uid=1000,gid=1000,mode=0400
 Secret=lab_smtp_password,target=smtp_password,uid=1000,gid=1000,mode=0400
+Secret=lab_smtp_username,target=smtp_username,uid=1000,gid=1000,mode=0400
 
 Environment=DOMAIN=https://vault.mwdle.com
 Environment=IP_HEADER=X-Forwarded-For

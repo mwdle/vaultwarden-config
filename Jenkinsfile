@@ -8,8 +8,8 @@ quadletPipeline(
         [
             type: 'usernamePassword',
             credentialsId: 'Email noreply',
-            podmanSecretUsernameName: 'lab_smtp_username',
-            podmanSecretPasswordName: 'lab_smtp_password'
+            podmanSecretPasswordName: 'lab_smtp_password',
+            podmanSecretUsernameName: 'lab_smtp_username'
         ]
     ]
 )
