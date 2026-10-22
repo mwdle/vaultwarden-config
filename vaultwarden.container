@@ -7,6 +7,8 @@ Network=vaultwarden.network
 Secret=lab_smtp_password,target=smtp_password,uid=1000,gid=1000,mode=0400
 Secret=lab_smtp_username,target=smtp_username,uid=1000,gid=1000,mode=0400
 
+Timezone=local
+
 Environment=DOMAIN=https://vault.mwdle.com
 Environment=IP_HEADER=X-Forwarded-For
 Environment=IP_HEADER_TRUSTED_PROXIES=10.89.0.0/16
@@ -18,7 +20,6 @@ Environment=SMTP_PASSWORD_FILE=/run/secrets/smtp_password
 Environment=SMTP_PORT=465
 Environment=SMTP_SECURITY=force_tls
 Environment=SMTP_USERNAME_FILE=/run/secrets/smtp_username
-Environment=TZ=America/Denver
 
 Volume=%h/containers/vaultwarden:/data:U,Z
 
