@@ -32,10 +32,9 @@ UserNS=auto
 NoNewPrivileges=true
 DropCapability=all
 
-HealthStartupCmd=["/healthcheck.sh"]
+HealthCmd=["/healthcheck.sh"]
 HealthStartupInterval=5s
 HealthStartupTimeout=5s
-HealthCmd=["/healthcheck.sh"]
 HealthInterval=60s
 HealthTimeout=10s
 HealthOnFailure=kill
